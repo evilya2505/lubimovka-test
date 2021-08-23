@@ -1,0 +1,31 @@
+.content {
+  margin-left: 121px;
+  padding: 189px 19px 100px;
+  max-width: 1100px;
+  min-width: 366px;
+}
+
+.content__search-results {
+  margin-top: 65px;
+}
+
+@media screen and (max-width: 1200px) {
+  .content {
+    margin-left: 60px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .content {
+    margin: 0 auto;
+    max-width: 600px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .content__search-results {
+    margin-top: 54px;
+  }
+}
+
+

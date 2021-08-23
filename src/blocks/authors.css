@@ -1,0 +1,19 @@
+.authors {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 900px) {
+  .authors {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .authors {
+    text-align: start;
+    width: 240px;
+    margin: 0 auto;
+  }
+}

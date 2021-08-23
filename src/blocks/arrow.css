@@ -1,0 +1,38 @@
+.arrow {
+  width: 20px;
+  height: 1px;
+  background: #242424;
+  position: relative;
+  transition: all 1s ease;
+  z-index: 1;
+}
+
+.arrow::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border: 1px solid #242424;
+  border-left: none;
+  border-top: none;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%) translateX(9px) rotate(-45deg);
+  transition: all 1s ease;
+}
+
+.btn:hover .arrow  {
+  background: #fff;
+}
+
+.btn:hover .arrow:before {
+  border-color: #fff;
+}
+
+.arrow_type_top-left {
+  transform: rotate(-45deg);
+}
+
+.arrow_type_bottom {
+  transform: rotate(90deg);
+}

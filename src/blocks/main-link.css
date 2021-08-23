@@ -1,0 +1,17 @@
+.main-link {
+  font-size: 20px;
+  line-height: 29px;
+  letter-spacing: -.01em;
+  text-decoration: none;
+  color: #242424;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+.main-link:hover {
+  color: #fff;
+  background-color: #242424;
+  box-decoration-break: clone;
+  padding: 0 3px;
+  margin-left: -6px;
+}
