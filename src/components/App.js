@@ -41,6 +41,8 @@ function App() {
     return arrayOfAuthors.reduce((newArray, authorObj, i) => {
       if (firstLetter === authorObj.author[0]) {
         stack.push(authorObj);
+
+        (i === arrayOfAuthors.length - 1) && newArray.push(stack);
       } else {
         newArray.push(stack);
         stack = [authorObj];
@@ -59,7 +61,7 @@ function App() {
     return str
     .replace(/[^a-zа-яё0-9\s]/gi, ' ')
     .replace(/\s+/g, ' ')
-    .replace(/ё/g,'e')
+    .replace(/ё/g,'е')
     .trim();
   }
 
